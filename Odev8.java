@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class Odev8{
 
-    public static void main(String[] arg) {
+    public static void main(String[] args) {
 
         int ilkSayi , ikinciSayi , yapilacakIslem;
 
