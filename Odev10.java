@@ -24,6 +24,7 @@ public class Odev10{
         turkce=girilenDeger.nextInt();
 
         int toplamDersSayisi=5;
+
         if(matematik>100 || matematik<0){
             matematik=0;
             toplamDersSayisi--;
@@ -45,13 +46,22 @@ public class Odev10{
             toplamDersSayisi--;
         }
 
-        double ortalama=(matematik+fizik+kimya+muzik+turkce)/toplamDersSayisi;
-
-        if(ortalama<55){
-            System.out.println("Gecerli giris yaptığınız derslerden kaldınız");}
-        else{
-            System.out.println("Gecerli giris yaptığınız derslerden gectiniz");}
-        System.out.println("Ortalamaniz : "+ortalama);
+        if(toplamDersSayisi != 0){
+            double ortalama=(matematik+fizik+kimya+muzik+turkce)/toplamDersSayisi;
+            if (toplamDersSayisi != 5){
+                System.out.print("Bir veya birden fazla dersi 0-100 araligi disinda girdiniz.Lutfen Tekrar giriniz.\nSu anki ortalamaniz"+ortalama);
+            }
+            else{
+                if(ortalama<55){
+                    System.out.println("Kaldiniz \nOrtalmaniz : "+ortalama);}
+                else{
+                    System.out.println("Gectiniz\nOrtalamaniz : "+ ortalama);}
+            }
+        }
+        else
+        System.out.println("Bütün girdiginiz notlar 0-100 arasinda degil"); //0'a bolme hatası
+        
 
     }
+
 }
