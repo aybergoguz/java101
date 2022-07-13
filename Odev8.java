@@ -8,7 +8,7 @@ public class Odev8{
 
         Scanner girilenDeger=new Scanner(System.in);
 
-        System.out.println("Lütfen hangi islemi yapacigini seciniz");
+        System.out.println("Lutfen hangi islemi yapacigini seciniz");
 
         System.out.println("1-)Toplama\n2-)Cıkartma\n3-)Carpma\n4-)Bolme");
         yapilacakIslem=girilenDeger.nextInt();
