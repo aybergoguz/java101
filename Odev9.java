@@ -17,7 +17,7 @@ public class Odev9{
         System.out.println("Sifrenizi Giriniz :");
         sifre=girilenDeger.nextLine();
 
-        if(kullaniciAdi.equals("kullanici") && sifre.equals("123456") ){
+        if(kullaniciAdi.equals("kullanici") && sifre.equals("123456")){
             System.out.println("Sisteme Hoşgelediniz");
         }
         else {
@@ -25,6 +25,7 @@ public class Odev9{
             int tercih=girilenDeger.nextInt();
             if(tercih==1){
                 System.out.println("Lütfen Yeni Şifrenizi giriniz :");
+                girilenDeger.nextLine();
                 String yeniSifre=girilenDeger.nextLine();
                     if(yeniSifre.equals("123456")){
                         System.out.println("Şifre Oluşturulamadı.\nLütfen Başka Şifre Giriniz.");
@@ -32,14 +33,15 @@ public class Odev9{
                     else{
                     sifre=yeniSifre;
                     System.out.println("Şifreniz Oluşturuldu.");}
-        
             }
+            else 
+                System.out.println("iyi günler.");
+                
+        
+             }
             
 
             
         }
         
-
-        
-    }
 }
