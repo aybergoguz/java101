@@ -23,34 +23,34 @@ public class Odev10{
         System.out.println("Turkce Notunuzu Giriniz : ");
         turkce=girilenDeger.nextInt();
 
-        int n=5;
+        int toplamDersSayisi=5;
         if(matematik>100 || matematik<0){
             matematik=0;
-            n--;
+            toplamDersSayisi--;
         }
         if(fizik>100 || fizik<0){
             fizik=0;
-            n--;
+            toplamDersSayisi--;
         }
         if(kimya>100 || kimya<0){
             kimya=0;
-            n--;
+            toplamDersSayisi--;
         }
         if(turkce>100 || turkce<0){
             turkce=0;
-            n--;
+            toplamDersSayisi--;
         }
         if(muzik>100 || muzik<0){
             muzik=0;
-            n--;
+            toplamDersSayisi--;
         }
 
-        double ortalama=(matematik+fizik+kimya+muzik+turkce)/n;
+        double ortalama=(matematik+fizik+kimya+muzik+turkce)/toplamDersSayisi;
 
         if(ortalama<55){
-            System.out.println("Kaldınız");}
+            System.out.println("Gecerli giris yaptığınız derslerden kaldınız");}
         else{
-            System.out.println("Gectiniz");}
+            System.out.println("Gecerli giris yaptığınız derslerden gectiniz");}
         System.out.println("Ortalamaniz : "+ortalama);
 
     }
