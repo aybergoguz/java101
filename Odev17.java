@@ -9,7 +9,7 @@ public class Odev17{
         System.out.println("Sayi Giriniz : ");
         n=scanner.nextInt();
         for(int i=0;i<=n;i++){
-            if(i % 20==0){
+            if(i % 4==0 || i % 5==0){
                 System.out.println(i);
             }
 
