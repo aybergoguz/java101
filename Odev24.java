@@ -43,6 +43,7 @@ public class Odev24{
                     break;
                     case 3:
                             System.out.println("Bakiyeniz : "+bakiye);
+                    break;
                 }
 
                 }while(select != 4);
