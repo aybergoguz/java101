@@ -9,7 +9,7 @@ public class Odev29 {
                     kontrol++;
                 }
             }
-            if(kontrol== i-2){
+            if(kontrol== (i-2)){
                 System.out.print(i+" ");
             }
         }
